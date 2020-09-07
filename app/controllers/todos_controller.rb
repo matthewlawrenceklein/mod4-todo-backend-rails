@@ -15,6 +15,12 @@ class TodosController < ApplicationController
         render json: todo
     end 
 
+    def update
+        todo = Todo.all.find(params[:id])
+        todo.update(color: params[:color])
+        render json: todo 
+    end
+
     private 
 
     def todo_params
