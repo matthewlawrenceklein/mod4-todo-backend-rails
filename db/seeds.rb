@@ -6,8 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(username: 'matthew', password: 'pass')
+Todo.destroy_all 
 
-Todo.create(body: 'get yams', color: 'green', user_id: User.first.id)
-Todo.create(body: 'eat fruit', color: 'green', user_id: User.first.id)
-Todo.create(body: 'vote twice', color: 'green', user_id: User.first.id)
+# User.create(username: 'matthew', password: 'pass')
+
+Todo.create(body: 'get yams', color: 'green', user_id: User.first.id, completed: false)
+Todo.create(body: 'eat fruit', color: 'green', user_id: User.first.id, completed: false)
+Todo.create(body: 'vote twice', color: 'green', user_id: User.first.id, completed: false)
