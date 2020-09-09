@@ -10,6 +10,6 @@ Todo.destroy_all
 
 # User.create(username: 'matthew', password: 'pass')
 
-Todo.create(body: 'get yams', color: 'green', user_id: User.first.id, completed: false)
-Todo.create(body: 'eat fruit', color: 'green', user_id: User.first.id, completed: false)
-Todo.create(body: 'vote twice', color: 'green', user_id: User.first.id, completed: false)
+Todo.create(body: 'get yams', color: 'green', user_id: User.first.id, completed: false, start_date: '2020-04-09T18:24:02.604Z')
+Todo.create(body: 'eat fruit', color: 'green', user_id: User.first.id, completed: false, start_date: '2020-07-09T18:24:02.604Z')
+Todo.create(body: 'vote twice', color: 'green', user_id: User.first.id, completed: false, start_date: '2020-06-09T18:24:02.604Z')

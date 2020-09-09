@@ -30,6 +30,6 @@ class TodosController < ApplicationController
     private 
 
     def todo_params
-        params.permit(:body, :color, :user_id, :completed)
+        params.permit(:body, :color, :user_id, :completed, :start_date)
     end 
 end
