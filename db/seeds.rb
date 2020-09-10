@@ -7,8 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Todo.destroy_all 
+User.destroy_all 
 
-# User.create(username: 'matthew', password: 'pass')
+User.create(email: 'sample@email.com')
 
 Todo.create(body: 'get yams', color: 'green', user_id: User.first.id, completed: false, start_date: '2020-04-09T18:24:02.604Z')
 Todo.create(body: 'eat fruit', color: 'green', user_id: User.first.id, completed: false, start_date: '2020-07-09T18:24:02.604Z')
